@@ -21,7 +21,7 @@ var telaLogin = function(){
     };
 
     this.msgSelecaoVeiculo = function(){
-        var msg = element(by.xpath("//h3[text()='Seleção de veículo']"));
+        var msg = element(by.cssContainingText('.font-bold','Seleção de veículo'));
         return msg;
     };
 };

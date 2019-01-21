@@ -1,6 +1,7 @@
 var telaLogin = require('../pageObject/TelaLogin');
 var telaSelecaoVeiculo = require('../pageObject/TelaSelecaoVeiculo');
 var utils = require('../Utils');
+
 describe('Indicar Condutor', function() {
 
     it('Acessar site e fazer Login', function() {
@@ -15,7 +16,7 @@ describe('Indicar Condutor', function() {
       browser.sleep(5000);
       
       var msg = telaLogin.msgSelecaoVeiculo();
-      expect(msg.getText()).toBe('Seleção de veículo');
+      expect(msg.getText().isPresent()).toBe(true);
     });
 
     it('Selecionar Veículo', function() {

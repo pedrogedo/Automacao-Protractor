@@ -1,15 +1,19 @@
 {
-    "name": "package",
-    "version": "1.0.0",
-    "description": "",
-    "main": "protractor.conf.js",
-    "dependencies": {
-      "protractor": "^5.4.2"
-    },
-    "devDependencies": {},
-    "scripts": {
-      "test": "webdriver-manager update && protractor"
-    },
-    "author": "Pedro Henrique Rosendo",
-    "license": "ISC"
-  }
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "protractor.conf.js",
+  "dependencies": {
+    "jasmine": "^3.3.1",
+    "protractor": "^5.4.2",
+    "typescript": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.3.7"
+  },
+  "scripts": {
+    "test": "webdriver-manager update && protractor"
+  },
+  "author": "Pedro Henrique Rosendo",
+  "license": "ISC"
+}
